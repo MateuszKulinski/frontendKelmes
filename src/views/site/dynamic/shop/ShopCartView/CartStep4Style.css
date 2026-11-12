@@ -1,0 +1,103 @@
+.cart-actions{
+    gap: var(--gap-sm);
+    padding: var(--padding-lg) 0;
+}
+.cart-actions .shop{
+    min-width: stretch;
+}
+.cart-actions .action{
+    cursor: pointer;
+    gap: var(--gap-sm);
+}
+.method-card {
+    cursor: pointer;
+    padding: var(--padding-md);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    transition: border-color 0.15s;
+}
+.method-card:hover {
+    border-color: var(--accent);
+}
+.selected-card {
+    border-color: var(--accent);
+}
+
+.payment-data {
+    padding: var(--padding-md);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    gap: var(--gap-md);
+}
+
+.method-card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-md);
+}
+
+.method-name {
+    font-size: var(--font-size-md);
+    flex: 1;
+}
+
+.method-card-right {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-md);
+}
+
+.method-price {
+    font-size: var(--font-size-sm);
+    color: var(--bs-secondary-color, #6c757d);
+    white-space: nowrap;
+}
+.method-left{
+    gap: var(--gap-md);
+    align-items: flex-start;
+}
+.method-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.method-info .name{
+    font-weight: 600;
+    font-size: var(--font-size-sm-plus);
+}
+.method-info{
+    font-size: var(--font-size-sm);
+}
+
+/* Custom radio */
+.delivery-radio {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--border-light, #dee2e6);
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: border-color 0.15s;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.delivery-radio::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent, #0d6efd);
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+.delivery-radio:checked {
+    border-color: var(--accent, #0d6efd);
+}
+.delivery-radio:checked::after {
+    opacity: 1;
+}

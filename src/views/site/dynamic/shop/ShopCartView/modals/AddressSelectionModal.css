@@ -1,0 +1,43 @@
+.address-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: #0000003D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+}
+
+.address-modal-item-content {
+    display: flex;
+    padding: var(--padding-sm) var(--padding-lg);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+}
+
+.adres-data {
+    width: 100%;
+}
+
+.is-selected .address-modal-item-content {
+    border-color: var(--accent-strong);
+}
+
+.address-modal-item-content {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.address-modal-header {
+    font-size: var(--font-size-md);
+    font-weight: 700;
+}
+
+.address-modal-footer {
+    gap: var(--gap-sm);
+}
+
+.address-modal-body {
+    gap: var(--gap-md);
+}

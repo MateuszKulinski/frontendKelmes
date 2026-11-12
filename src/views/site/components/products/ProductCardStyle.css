@@ -1,0 +1,138 @@
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-light);
+    overflow: hidden;
+    background: #fff;
+    transition: var(--transition-default);
+    z-index: 1;
+}
+
+.product-card.list-view {
+    flex-direction: row;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+.product-card-badges {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+.product-card-badge {
+    background: var(--accent);
+    color: #fff;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    padding: 2px var(--padding-lg);
+    border-radius: 5px;
+    z-index: 1;
+    text-align: center;
+}
+
+.product-card-badge-new {
+    background: var(--new-color);
+}
+
+.product-card-badge-sale {
+    background: var(--sale-color);
+}
+
+.product-card-image {
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    padding: var(--padding-xl);
+    opacity: 1;
+    transition: var(--transition-default);
+}
+
+.product-card.list-view .product-card-image {
+    width: auto;
+    aspect-ratio: auto;
+}
+
+.product-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-card-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #e5e7eb;
+}
+
+.product-card-body {
+    padding: var(--padding-md);
+    gap: var(--gap-sm);
+}
+
+.product-card-price {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.product-buy {
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-card:hover .product-buy {
+    display: block;
+}
+
+.product-card.list-view .product-buy {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-card {
+    min-height: stretch;
+}
+
+.on_the_way {
+    background: var(--bg-dark) !important;
+    color: #fff;
+    border-color: var(--bg-dark) !important;
+    min-width: 100%;
+}
+
+.product-card-favourite {
+    opacity: 0;
+    transition: var(--transition-default);
+}
+
+.product-card:hover .product-card-favourite {
+    opacity: 100;
+}
+
+
+/* 
+.product-card-name {
+    line-height: 1.4;
+    height: calc(3 * 1.4em);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.product-card-price-container {
+    height: 27px;
+} */

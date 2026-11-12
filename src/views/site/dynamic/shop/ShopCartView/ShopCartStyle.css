@@ -1,0 +1,123 @@
+p {
+  margin: 0;
+}
+.step-icon {
+  padding: var(--padding-sm);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+.cart-step-content {
+  min-height: 300px;
+}
+.cart-step {
+  gap: var(--gap-lg);
+}
+.active .step-icon {
+  background-color: var(--accent-muted);
+  color: var(--accent);
+  border-color: var(--accent-muted);
+}
+.done .step-icon {
+  background-color: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+.step-title {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+}
+.step1:first-letter {
+  color: var(--accent);
+  font-weight: 600;
+}
+.cart-steps-nav {
+  margin-bottom: var(--margin-xl);
+  gap: var(--gap-lg);
+}
+.cart-separator {
+  height: 1px;
+  min-width: 20px;
+  background-color: var(--accent);
+  opacity: 0.2;
+}
+.cart-separator.is-complete {
+  opacity: 1;
+}
+.white-border {
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.blue-border {
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+}
+.upcoming .step-icon {
+  background-color: var(--light_blue);
+  color: var(--accent);
+  border-color: var(--light_blue);
+}
+@media (max-width: 991px) {
+  .cart-steps-nav {
+    overflow-x: auto;
+    gap: var(--gap-sm);
+    padding-bottom: var(--padding-sm);
+  }
+  .cart-step {
+    flex: 0 0 auto;
+    min-width: 92px;
+    gap: 6px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cart-step .step-content {
+    min-width: 0;
+  }
+  .step-title {
+    font-size: var(--font-size-sm);
+  }
+  .step-meta {
+    display: none;
+  }
+  .cart-separator {
+    display: none;
+  }
+  .cart-step-content {
+    min-height: 0;
+  }
+  :deep(.cart-summary-panel) {
+    position: static;
+  }
+  :deep(.cart-actions) {
+    flex-wrap: wrap;
+    gap: var(--gap-sm);
+  }
+  :deep(.cart-actions > div) {
+    width: 100%;
+    max-width: none;
+  }
+  :deep(.cart-actions .shop) {
+    width: 100%;
+    white-space: normal;
+  }
+  :deep(.method-card-inner),
+  :deep(.method-left) {
+    flex-wrap: wrap;
+  }
+  :deep(.method-card-right) {
+    margin-left: 32px;
+  }
+  :deep(.change-adress-section) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-sm);
+  }
+  :deep(.change-adress-section .ms-2) {
+    margin-left: 0 !important;
+  }
+}

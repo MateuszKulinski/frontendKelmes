@@ -1,0 +1,108 @@
+.cart-actions {
+  gap: var(--gap-sm);
+  padding: var(--padding-lg) 0;
+}
+
+.cart-actions .shop {
+  min-width: stretch;
+}
+/* 
+.notched-field {
+    position: relative;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: var(--padding-sm);
+}
+
+.notched-field label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translateY(-50%);
+    background: #fff;
+    font-size: var(--font-size-sm);
+    color: #000;
+    line-height: 1;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.notched-field .form-control {
+    border: none;
+    padding: 0;
+    height: auto;
+    background: transparent;
+    box-shadow: none;
+    font-size: var(--font-size-sm-plus);
+    color: #000;
+} */
+
+.adress-table > div {
+  padding-top: var(--gap-sm);
+  padding-bottom: var(--gap-sm);
+}
+
+.address-modal {
+  background: #fff;
+  width: 100%;
+  max-width: 520px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-md);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  gap: var(--gap-lg);
+}
+
+.adress-info {
+  padding: var(--padding-md);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+}
+
+.change-adress-section {
+  padding: var(--padding-md) 0;
+}
+
+.change-address-btn {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+}
+
+/* Custom radio */
+
+.delivery-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--border-light, #dee2e6);
+  border-radius: 50%;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color 0.15s;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.delivery-radio::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent, #0d6efd);
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.delivery-radio:checked {
+  border-color: var(--accent, #0d6efd);
+}
+
+.delivery-radio:checked::after {
+  opacity: 1;
+}

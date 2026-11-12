@@ -1,0 +1,159 @@
+.ai-products {
+  min-width: 0;
+  margin: 8px 0 0;
+}
+
+.ai-products .ai-products-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 36px;
+  margin: 0 0 8px;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.ai-products .ai-products-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ai-products .ai-products-count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 24px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: var(--bg-main);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.ai-products .ai-products-controls {
+  display: flex;
+  gap: 5px;
+}
+
+.ai-products .ai-products-controls button {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .18s ease, border-color .18s ease;
+}
+
+.ai-products .ai-products-controls .ai-chat-icon {
+  font-size: 12px;
+}
+
+.ai-products .ai-products-controls button:hover:not(.swiper-button-disabled) {
+  background: var(--accent-muted);
+  border-color: var(--accent);
+}
+
+.ai-products .ai-products-controls button.swiper-button-disabled {
+  opacity: .35;
+  cursor: default;
+}
+
+.ai-products .ai-products-controls button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.ai-products .ai-products-swiper {
+  width: 100%;
+  min-width: 0;
+  padding: 2px 2px 5px;
+}
+
+.ai-products .ai-products-swiper .swiper-slide {
+  width: min(174px, 85%);
+  height: auto;
+}
+
+.ai-products .ai-products-swiper .swiper-wrapper {
+  height: auto;
+}
+
+.ai-products .ai-product-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  background: var(--bg-surface);
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+
+.ai-products .ai-product-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 3px 10px var(--accent-muted);
+}
+
+.ai-products .ai-product-link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.ai-products .ai-product-link img {
+  display: block;
+  width: 100%;
+  height: 80px;
+  padding: 6px;
+  border-radius: 8px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.ai-products .ai-product-link small {
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.ai-products .ai-product-link strong {
+  min-height: 38px;
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.ai-products .ai-product-price {
+  margin: auto 0 0;
+  padding-top: 12px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ai-products .ai-product-price small {
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+@media (pointer: coarse) {
+  .ai-products .ai-products-controls button {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-products * {
+    transition: none !important;
+  }
+}

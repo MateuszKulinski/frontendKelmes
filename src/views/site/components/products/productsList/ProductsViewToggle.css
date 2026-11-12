@@ -1,0 +1,71 @@
+.products-view-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-ex-sm);
+}
+
+.products-view-toggle .view-type-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--border-light);
+  cursor: pointer;
+}
+
+.products-view-toggle .view-type-button.active,
+.products-view-toggle .view-type-button:hover {
+  color: var(--secondary-accent);
+}
+
+.products-view-toggle .view-type-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.products-view-toggle__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 8px);
+  gap: 3px;
+}
+
+.products-view-toggle__grid > span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.products-view-toggle__list {
+  display: grid;
+  gap: 3px;
+}
+
+.products-view-toggle__list > span {
+  display: flex;
+  gap: 3px;
+}
+
+.products-view-toggle__list > span::before,
+.products-view-toggle__list > span::after {
+  content: '';
+  height: 8px;
+  border-radius: var(--radius-sm);
+  background: currentColor;
+}
+
+.products-view-toggle__list > span::before {
+  width: 8px;
+}
+
+.products-view-toggle__list > span::after {
+  width: 16px;
+}
+
+@media (max-width: 991px) {
+  .products-view-toggle {
+    display: none;
+  }
+}

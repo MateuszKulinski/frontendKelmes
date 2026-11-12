@@ -1,0 +1,269 @@
+.product-main-image img {
+  width: auto;
+  max-height: 400px;
+  min-height: 400px;
+  display: block;
+  align-items: center;
+}
+
+.product-image-placeholder {
+  height: 550px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-light);
+}
+
+.product-image-placeholder img {
+  max-height: 100%;
+}
+
+.swiper-button-lock {
+  display: flex !important;
+}
+
+.gallery-view {
+  position: relative;
+}
+
+.gallery-view .product-badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  gap: 4px;
+}
+
+.gallery-view .product-badges > span {
+  width: 200px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+  background: #d9d9d9;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: #fff;
+  padding: 7px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.product-main-image {
+  align-items: center;
+  padding: var(--padding-xl);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  position: relative;
+}
+
+.product-gallery {
+  gap: var(--gap-md);
+  height: 550px;
+  margin-bottom: 25px;
+}
+
+.product-thumbs-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.thumbnail-swiper {
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-thumb-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-thumb {
+  width: 100%;
+  object-fit: contain;
+  padding: var(--padding-sm);
+  cursor: pointer;
+  /* border: 1px solid var(--border-light); */
+  border-radius: var(--radius-sm);
+  transition: var(--transition-default);
+}
+
+.product-thumb.active,
+.product-thumb:hover {
+  border-color: var(--secondary-accent);
+}
+.product-thumbs-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 550px;
+
+  transform: translateY(-5px);
+}
+
+.thumbnail-viewport {
+  width: 106px;
+  height: 510px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.thumbnail-track {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  width: 106px;
+
+  transition: transform 0.2s ease;
+}
+
+.product-thumb-slide {
+  flex: 0 0 100px;
+
+  width: 106px;
+  height: 100px;
+
+  padding: 0;
+
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  transition: border-color 0.15s ease;
+}
+
+.product-thumb-slide:hover {
+  border-color: #aaa;
+}
+
+.product-thumb-slide.active {
+  border-color: #3478f6;
+}
+
+.product-thumb {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/*
+ * STRZAŁKI
+ */
+
+.thumbnail-arrow {
+  width: 34px;
+  height: 34px;
+
+  flex: 0 0 34px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: #ddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  z-index: 2;
+
+  transition:
+    opacity 0.15s ease,
+    background 0.15s ease;
+}
+
+.thumbnail-arrow:hover:not(:disabled) {
+  background: #ccc;
+}
+
+.thumbnail-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.thumbnail-arrow-up {
+  margin-bottom: 8px;
+}
+
+.thumbnail-arrow-down {
+  margin-top: 8px;
+}
+@media (max-width: 991px) {
+  .product-gallery {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: var(--gap-sm);
+    margin-bottom: 0;
+  }
+  .product-image-placeholder {
+    width: 100%;
+    height: min(75vw, 420px);
+    min-height: 280px;
+  }
+  .product-thumbs-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    transform: none;
+  }
+  .thumbnail-viewport {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .thumbnail-track {
+    width: max-content;
+    flex-direction: row;
+    transform: none !important;
+  }
+  .product-thumb-slide {
+    flex: 0 0 76px;
+    width: 76px;
+    height: 76px;
+  }
+  .thumbnail-arrow {
+    display: none;
+  }
+  .gallery-view .product-badges > span {
+    width: auto;
+    padding: 0 10px;
+  }
+}

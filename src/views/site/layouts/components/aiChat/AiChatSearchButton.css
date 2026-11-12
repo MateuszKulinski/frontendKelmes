@@ -1,0 +1,28 @@
+.ai-chat-search-button.btn-primary {
+  flex: 0 0 auto;
+  height: var(--search-btn-height);
+  gap: var(--gap-ex-sm);
+  padding: 0 var(--padding-sm) !important;
+  background-color: #eef4ff !important;
+  border-color: #d9e5fb !important;
+  color: var(--accent) !important;
+  white-space: nowrap;
+}
+
+.ai-chat-search-button.btn-primary:hover {
+  background-color: #dfeaff !important;
+  border-color: #c3d7fb !important;
+  color: var(--accent-strong) !important;
+}
+
+.ai-chat-search-button .icon-sparkle {
+  flex: 0 0 14px;
+  width: 14px;
+  height: 14px;
+  background-color: currentColor;
+}
+
+.ai-chat-search-button.btn-primary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

@@ -1,0 +1,77 @@
+/* WRAPPER */
+
+.mega-wrapper {
+    position: relative;
+}
+
+
+/* MEGA MENU */
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 900px;
+    z-index: 9999;
+}
+
+
+/* SHOW ON HOVER (DESKTOP) */
+
+@media (min-width: 992px) {
+    .mega-wrapper:hover .mega-menu {
+        display: block;
+    }
+}
+
+
+/* LEVEL STYLES */
+
+.column_lvl_1 {
+    /* top categories */
+}
+
+.column_lvl_2 {
+    margin-top: var(--margin-sm);
+}
+
+.column_lvl_3 {
+    padding-left: var(--padding-sm);
+    font-size: var(--font-size-sm);
+}
+
+.column_lvl_4 {
+    padding-left: var(--padding-md);
+    opacity: 0.85;
+}
+
+
+/* LINK STYLES */
+
+.column_lvl_1>a {
+    font-weight: 700;
+}
+
+.column_lvl_2>a {
+    font-weight: 500;
+}
+
+.column_lvl_3>a {
+    color: var(--text-secondary);
+}
+
+
+/* OPTIONAL HOVER EFFECT */
+
+.mega-menu a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+body.mega-force-close .mega-menu {
+    display: none !important;
+}
+.mega-menu a {
+    color: var(--text-primary) !important;
+}

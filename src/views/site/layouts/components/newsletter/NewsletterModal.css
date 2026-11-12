@@ -1,0 +1,150 @@
+.newsletter-modal {
+    width: 100%;
+    padding: 24px;
+}
+
+.newsletter-modal-description {
+    margin: 0 0 18px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.subjects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subject-option {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 50px;
+    padding: 10px 14px;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    background: var(--bg-surface);
+    cursor: pointer;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.subject-option:hover {
+    border-color: var(--accent);
+    background: #f8faff;
+}
+
+.subject-option.is-selected {
+    border-color: var(--accent);
+    background: #f1f6ff;
+}
+
+.subject-option:focus-within {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.subject-option input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.subject-option-check {
+    flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid #aeb8c7;
+    border-radius: 4px;
+    background: #fff;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.subject-option input:checked + .subject-option-check {
+    border-color: var(--accent);
+    background: var(--accent);
+}
+
+.subject-option input:checked + .subject-option-check::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 9px;
+    margin: 2px 0 0 5px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.subject-option-name {
+    color: var(--text-primary);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.subjects-empty {
+    margin: 0;
+    padding: 16px;
+    border: 1px dashed var(--border-light);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.newsletter-modal-form :deep(.form-group) {
+    margin-bottom: 0;
+}
+
+.newsletter-terms {
+    margin-top: 16px;
+}
+
+.newsletter-terms :deep(.label) {
+    line-height: 1.4;
+}
+
+.newsletter-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.loader-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+}
+
+.spinner {
+    width: 34px;
+    height: 34px;
+    border: 3px solid #ddd;
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+}
+
+@media (max-width: 600px) {
+    .newsletter-modal {
+        padding: 18px;
+    }
+
+    .newsletter-modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    .newsletter-modal-actions :deep(.btn) {
+        width: 100%;
+    }
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,77 @@
+import type { ModuleTranslations } from "./buildLang";
+
+const promotions: ModuleTranslations = {
+  pl: {
+    promo_title: "Promocje",
+    products_title: "Produkty w cenniku",
+    products_empty: "Brak produktów w aktywnych cenniku.",
+    category_filter: "Filtruj po kategorii",
+    promotion_filter: "Filtruj po umowie",
+    all_promotions: "Wszystkie promocje",
+    products_load_error: "Nie udało się pobrać produktów z cennika.",
+    contracts: "Umowy",
+    contracts_promotions: "Umowy i promocje",
+
+    type: "Typ",
+    contractor: "Kontrahent",
+    value_type: "Typ wartości",
+    percentage: "Procent",
+    quantity_from: "Ilość od",
+    value_from: "Wartość od",
+    active: "Aktywna",
+    description: "Opis",
+    id: "ID",
+    date_from: "Data od",
+    date_to: "Data do",
+  },
+
+  en: {
+    promo_title: "Promotions",
+    products_title: "Products in the catalog",
+    products_empty: "No products in the active catalog.",
+    category_filter: "Filter by category",
+    promotion_filter: "Filter by contract",
+    all_promotions: "All promotions",
+    products_load_error: "Could not load products from the catalog.",
+    contracts: "Contracts",
+    contracts_promotions: "Contracts and promotions",
+
+    type: "Type",
+    contractor: "Contractor",
+    value_type: "Value type",
+    percentage: "Percentage",
+    quantity_from: "Quantity from",
+    value_from: "Value from",
+    active: "Active",
+    description: "Description",
+    id: "ID",
+    date_from: "Date from",
+    date_to: "Date to",
+  },
+
+  de: {
+    promo_title: "Aktionen",
+    products_title: "Katalogprodukte",
+    products_empty: "Keine Produkte in aktiven Katalogen.",
+    category_filter: "Nach Kategorie filtern",
+    promotion_filter: "Nach Vertrag filtern",
+    all_promotions: "Alle Aktionen",
+    products_load_error: "Katalogprodukte konnten nicht geladen werden.",
+    contracts: "Verträge",
+    contracts_promotions: "Verträge und Aktionen",
+
+    type: "Typ",
+    contractor: "Auftragnehmer",
+    value_type: "Werttyp",
+    percentage: "Prozentsatz",
+    quantity_from: "Menge ab",
+    value_from: "Wert ab",
+    active: "Aktiv",
+    description: "Beschreibung",
+    id: "ID",
+    date_from: "Datum von",
+    date_to: "Datum bis",
+  },
+};
+
+export default promotions;

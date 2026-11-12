@@ -1,0 +1,149 @@
+.product-description {
+    white-space: pre-line;
+}
+
+.tab-icon {
+    color: var(--accent);
+    font-size: 20px;
+}
+
+.tab-title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+}
+
+.tab-header.is-open {
+    border-bottom: 1px solid var(--border-default);
+}
+
+.tab-header {
+    padding: var(--padding-md);
+}
+
+.tab-title-container {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-sm);
+}
+
+.tab-header {
+    cursor: pointer;
+    user-select: none;
+    /* Zapobiega zaznaczaniu tekstu przy szybkim klikaniu */
+}
+
+.wrapper-content {
+    display: flex;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height .35s ease, opacity .25s ease, padding .35s ease;
+    padding: 0 var(--padding-md);
+}
+
+.wrapper-content.is-open {
+    max-height: 1500px;
+    /* wystarczająco duża wartość */
+    opacity: 1;
+    padding: var(--padding-md);
+}
+
+.content-wrapper-inside {
+    width: 100%;
+}
+
+.content-wrapper-inside {
+    overflow: hidden;
+}
+
+.features-table tr:nth-child(odd) {
+    background-color: var(--bg-muted);
+}
+
+.features-table {
+    border: 1px solid var(--border-light);
+    width: 100%;
+}
+
+.features .content-wrapper-inside {
+    width: 100%;
+}
+
+.review {
+    padding: 20px 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-weight: 600;
+    color: #333;
+}
+
+.review-date {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #999;
+}
+
+.review-comment {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.no-reviews {
+    padding: 20px 0;
+    color: #999;
+    text-align: center;
+}
+
+.documentation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.documentation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity .2s;
+}
+
+.documentation-item:hover {
+    opacity: .8;
+}
+
+.documentation-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: -5px;
+}
+
+.documentation-name {
+    font-weight: 600;
+}
+
+.documentation-description {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+}
+
+.documentation-empty {
+    color: var(--color-text-secondary);
+}

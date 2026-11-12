@@ -1,0 +1,80 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* INFO */
+
+.info {
+    color: var(--text-secondary);
+    font-size: var(--font-size-md);
+}
+
+
+/* CONTROLS */
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* BUTTON */
+
+.btn {
+    min-width: 34px;
+    height: 34px;
+    border: 1px solid var(--border-light);
+    background: var(--bg-surface);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition-default);
+}
+
+.btn:hover:not(:disabled) {
+    background: var(--bg-main);
+}
+
+.btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn i {
+    font-size: var(--font-size-sm);
+}
+
+
+/* JUMP */
+
+.jump {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 10px;
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+.jump input {
+    width: 60px;
+    height: 32px;
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-sm);
+    text-align: center;
+    outline: none;
+}
+
+.jump input:focus {
+    border-color: var(--accent);
+}

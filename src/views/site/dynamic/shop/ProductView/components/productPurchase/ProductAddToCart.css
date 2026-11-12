@@ -1,0 +1,106 @@
+.purchase-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-sm);
+    min-width: 0;
+}
+.purchase-actions :deep(.qty-control) {
+    flex: 0 0 auto;
+}
+.purchase-actions :deep(.qty-input) {
+    width: 44px;
+}
+.purchase-actions .add-to-cart-btn {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+    height: auto;
+    min-height: 34px;
+    white-space: normal;
+}
+.purchase-compare {
+    margin-top: var(--gap-sm);
+}
+.availability {
+    margin-top: var(--gap-sm);
+}
+@media (max-width: 420px) {
+    .purchase-actions :deep(.qty-input) {
+        width: 34px;
+    }
+    .purchase-actions .add-to-cart-btn {
+        padding-inline: var(--padding-sm);
+    }
+}
+
+.add-to-compare-btn,
+.add-to-cart-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: var(--padding-sm) var(--padding-lg);
+    height: 32px;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: var(--accent);
+    color: #fff;
+    font-size: var(--font-size-md-minus);
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s;
+    width: 100%;
+    border: 1px solid var(--accent);
+}
+
+.add-to-compare-btn {
+    color: black;
+    background-color: #fff;
+}
+.add-to-compare-btn.compare-btn--active {
+    color: #fff;
+    background-color: var(--accent);
+}
+.add-to-compare-btn.compare-btn--active .custom-icon {
+    background-color: #fff;
+}
+
+.add-to-compare-btn:hover,
+.add-to-cart-btn:hover:not(:disabled) {
+    background: var(--accent-hover);
+    color: #fff;
+}
+
+.add-to-compare-btn:disabled,
+.add-to-cart-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.add-to-compare-btn .custom-icon,
+.add-to-cart-btn .custom-icon {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+}
+
+.add-to-compare-btn .custom-icon {
+    background-color: var(--accent);
+}
+
+.availability-text {
+    font-size: var(--font-size-sm-plus);
+    color: var(--success);
+}
+
+.availability-text.brak {
+    color: var(--error);
+}
+
+.availability {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: var(--gap-ex-sm);
+}

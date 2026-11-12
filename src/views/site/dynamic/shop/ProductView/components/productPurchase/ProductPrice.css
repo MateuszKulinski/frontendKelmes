@@ -1,0 +1,22 @@
+.net-price,
+.gross-price {
+    font-size: var(--font-size-extra);
+    font-weight: 600;
+}
+
+.net-label,
+.gross-label {
+    font-size: var(--font-size-md);
+    font-weight: 500;
+}
+
+.net-price.is-primary-price,
+.gross-price.is-primary-price {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+}
+
+.net-price.is-primary-price .net-label,
+.gross-price.is-primary-price .gross-label {
+    font-size: var(--font-size-lg);
+}

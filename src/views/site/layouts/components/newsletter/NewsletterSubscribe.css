@@ -1,0 +1,23 @@
+.newsletter-subscribe {
+    max-width: 420px;
+}
+
+.newsletter-description {
+    margin-bottom: 20px;
+    opacity: .75;
+}
+
+.newsletter-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.newsletter-buttons>* {
+    flex: 1;
+}
+
+.newsletter-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}

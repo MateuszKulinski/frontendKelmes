@@ -1,0 +1,212 @@
+import type { ModuleTranslations } from "./buildLang";
+
+const claims: ModuleTranslations = {
+  pl: {
+    title: "Reklamacje i zwroty",
+    claims_tab: "Reklamacje",
+    returns_tab: "Zwroty",
+    my_cases: "Moje zgłoszenia",
+    new_case: "Nowe zgłoszenie",
+    case_number: "Nr zgłoszenia",
+    open_case: "Otwórz",
+    status: "Status",
+    claim_case: "Reklamacja",
+    return_case: "Zwrot",
+    back_to_list: "Wróć do listy",
+    description: "Opis",
+    history: "Historia",
+    message: "Wiadomość",
+    no_history: "Brak wpisów historii.",
+    add_message: "Dodaj wiadomość",
+    message_only: "Tylko wiadomość",
+    message_placeholder: "Treść wiadomości...",
+    send_message: "Wyślij",
+    cancel_case: "Anuluj zgłoszenie",
+    case_closed: "Zgłoszenie zostało zakończone.",
+    case_not_found: "Nie znaleziono zgłoszenia.",
+    no_cases: "Brak zgłoszeń.",
+    all_statuses: "Wszystkie statusy",
+    user: "Użytkownik",
+    edit_case: "Edytuj zgłoszenie",
+    description_placeholder: "Opisz problem lub podaj dodatkowe informacje...",
+    updated: "Zgłoszenie zostało zaktualizowane.",
+    update_error: "Nie udało się zapisać zmian.",
+
+    claim: "Reklamuj",
+    return: "Zwróć",
+
+    claim_documents: "Dokumenty do reklamacji",
+    return_documents: "Dokumenty do zwrotu",
+
+    document: "Dokument",
+    number: "Numer",
+    contractor: "Kontrahent",
+    date_add: "Data dodania",
+
+    total_net: "Wartość netto",
+    total_gross: "Wartość brutto",
+
+    positions: "Pozycje",
+    product: "Produkt",
+    indeks: "Indeks",
+    quantity: "Ilość",
+    price_net: "Cena netto",
+    price_gross: "Cena brutto",
+    notes: "Uwagi",
+
+    attachments: "Załączniki",
+    position_notes: "Uwagi do pozycji",
+
+    search_document: "Szukaj dokumentu...",
+    loading: "Ładowanie...",
+    document_not_found: "Nie znaleziono dokumentu.",
+
+    confirm_title: "Potwierdzenie",
+    confirm_claim: "Czy na pewno chcesz zareklamować wybrane pozycje?",
+    confirm_return: "Czy na pewno chcesz zwrócić wybrane pozycje?",
+
+    yes: "Tak",
+    no: "Nie",
+  },
+
+  en: {
+    title: "Claims and returns",
+    claims_tab: "Claims",
+    returns_tab: "Returns",
+    my_cases: "My cases",
+    new_case: "New case",
+    case_number: "Case no.",
+    open_case: "Open",
+    status: "Status",
+    claim_case: "Claim",
+    return_case: "Return",
+    back_to_list: "Back to list",
+    description: "Description",
+    history: "History",
+    message: "Message",
+    no_history: "No history entries.",
+    add_message: "Add a message",
+    message_only: "Message only",
+    message_placeholder: "Message text...",
+    send_message: "Send",
+    cancel_case: "Cancel case",
+    case_closed: "This case is closed.",
+    case_not_found: "Case not found.",
+    no_cases: "No cases found.",
+    all_statuses: "All statuses",
+    user: "User",
+    edit_case: "Edit case",
+    description_placeholder: "Describe the issue or add more information...",
+    updated: "Case updated.",
+    update_error: "Could not save changes.",
+
+    claim: "Claim",
+    return: "Return",
+
+    claim_documents: "Documents available for claim",
+    return_documents: "Documents available for return",
+
+    document: "Document",
+    number: "Number",
+    contractor: "Contractor",
+    date_add: "Added date",
+
+    total_net: "Net value",
+    total_gross: "Gross value",
+
+    positions: "Positions",
+    product: "Product",
+    indeks: "Index",
+    quantity: "Quantity",
+    price_net: "Net price",
+    price_gross: "Gross price",
+    notes: "Notes",
+
+    attachments: "Attachments",
+    position_notes: "Position notes",
+
+    search_document: "Search document...",
+    loading: "Loading...",
+    document_not_found: "Document not found.",
+
+    confirm_title: "Confirmation",
+    confirm_claim: "Are you sure you want to claim the selected items?",
+    confirm_return: "Are you sure you want to return the selected items?",
+
+    yes: "Yes",
+    no: "No",
+  },
+
+  de: {
+    title: "Reklamationen und Rücksendungen",
+    claims_tab: "Reklamationen",
+    returns_tab: "Rücksendungen",
+    my_cases: "Meine Vorgänge",
+    new_case: "Neuer Vorgang",
+    case_number: "Vorgangs-Nr.",
+    open_case: "Öffnen",
+    status: "Status",
+    claim_case: "Reklamation",
+    return_case: "Rücksendung",
+    back_to_list: "Zurück zur Liste",
+    description: "Beschreibung",
+    history: "Verlauf",
+    message: "Nachricht",
+    no_history: "Keine Verlaufseinträge.",
+    add_message: "Nachricht hinzufügen",
+    message_only: "Nur Nachricht",
+    message_placeholder: "Nachrichtentext...",
+    send_message: "Senden",
+    cancel_case: "Vorgang stornieren",
+    case_closed: "Dieser Vorgang ist abgeschlossen.",
+    case_not_found: "Vorgang nicht gefunden.",
+    no_cases: "Keine Vorgänge gefunden.",
+    all_statuses: "Alle Status",
+    user: "Benutzer",
+    edit_case: "Vorgang bearbeiten",
+    description_placeholder:
+      "Beschreiben Sie das Problem oder ergänzen Sie Informationen...",
+    updated: "Vorgang aktualisiert.",
+    update_error: "Änderungen konnten nicht gespeichert werden.",
+
+    claim: "Reklamieren",
+    return: "Zurückgeben",
+
+    claim_documents: "Dokumente für Reklamationen",
+    return_documents: "Dokumente für Rückgaben",
+
+    document: "Dokument",
+    number: "Nummer",
+    contractor: "Vertragspartner",
+    date_add: "Hinzugefügt am",
+
+    total_net: "Nettowert",
+    total_gross: "Bruttowert",
+
+    positions: "Positionen",
+    product: "Produkt",
+    indeks: "Index",
+    quantity: "Menge",
+    price_net: "Nettopreis",
+    price_gross: "Bruttopreis",
+    notes: "Anmerkungen",
+
+    attachments: "Anhänge",
+    position_notes: "Anmerkungen zur Position",
+
+    search_document: "Dokument suchen...",
+    loading: "Laden...",
+    document_not_found: "Dokument nicht gefunden.",
+
+    confirm_title: "Bestätigung",
+    confirm_claim:
+      "Möchten Sie die ausgewählten Positionen wirklich reklamieren?",
+    confirm_return:
+      "Möchten Sie die ausgewählten Positionen wirklich zurückgeben?",
+
+    yes: "Ja",
+    no: "Nein",
+  },
+};
+
+export default claims;

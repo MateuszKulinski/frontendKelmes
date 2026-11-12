@@ -1,0 +1,35 @@
+.base-card {
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-strong);
+    width: 100%;
+    max-width: 600px;
+    margin: var(--margin-lg) auto;
+    overflow: hidden;
+}
+
+.base-card__header {
+    padding: var(--padding-sm) var(--padding-xl);
+    background-color: var(--bg-dark);
+}
+
+.base-card__content {
+    padding: var(--padding-xl);
+    background-color: var(--bg-muted);
+}
+
+.base-card__footer {
+    padding: var(--padding-sm) var(--padding-xl);
+    background-color: var(--bg-main);
+}
+
+.base-card__content :deep(form) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.base-card__content :deep(.error-container) {
+    min-height: 45px;
+}

@@ -1,0 +1,34 @@
+.packaging-option {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: var(--padding-sm);
+    border: 1px solid var(--border-light);
+    cursor: pointer;
+}
+
+.packaging-option.active {
+    border-color: #0d6efd;
+    background: #f5f9ff;
+}
+
+.product-packaging {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.packaging-right,
+.packaging-left {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.packaging-title {
+    padding: var(--padding-sm) 0;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    padding-bottom: 0;
+}

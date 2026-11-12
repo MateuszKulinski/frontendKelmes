@@ -1,0 +1,24 @@
+.user-view {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-lg);
+}
+
+
+/* status */
+
+.status {
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+}
+
+.status.active {
+    background: var(--success);
+    color: white;
+}
+
+.status.inactive {
+    background: var(--error);
+    color: white;
+}

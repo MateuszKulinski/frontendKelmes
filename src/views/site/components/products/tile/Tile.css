@@ -1,0 +1,253 @@
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  background: #fff;
+  transition: var(--transition-default);
+  z-index: 1;
+}
+
+.product-card.list-view {
+  flex-direction: row;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-card-badges {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+}
+
+.product-card-badge {
+  background: var(--accent);
+  color: #fff;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  padding: 2px var(--padding-lg);
+  border-radius: 5px;
+  z-index: 1;
+  text-align: center;
+}
+
+.product-card-badge-new {
+  background: var(--new-color);
+}
+
+.product-card-badge-sale {
+  background: var(--sale-color);
+}
+
+.product-card-image {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  padding: var(--padding-xl);
+  opacity: 1;
+  transition: var(--transition-default);
+}
+
+.product-card.list-view .product-card-image {
+  width: auto;
+  aspect-ratio: auto;
+}
+
+.product-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-card-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #e5e7eb;
+}
+
+.product-card-body {
+  padding: var(--padding-md);
+  gap: var(--gap-sm);
+}
+
+.product-card-price {
+  display: flex;
+  gap: var(--gap-ex-sm);
+  align-items: end;
+}
+.price {
+  font-size: var(--font-size-lg-plus);
+  font-weight: 700;
+  color: #000;
+}
+.price-name {
+  font-size: var(--font-size-md-minus);
+  font-weight: 400;
+  color: #000;
+}
+p {
+  margin: 0;
+}
+
+.product-buy {
+  text-align: center;
+  cursor: pointer;
+}
+
+.product-card:hover .product-buy {
+  display: block;
+}
+
+.product-card.list-view .product-buy {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.product-card {
+  min-height: stretch;
+}
+
+.add-to-cart-btn .custom-icon {
+  min-width: 18px;
+  min-height: 18px;
+  background-color: #fff;
+}
+:deep(.add-to-cart-btn) {
+  width: auto;
+  flex: 1;
+}
+:deep(.qty-control) {
+  width: auto;
+}
+:deep(.qty-input) {
+  width: 30px;
+}
+.on_the_way {
+  background: var(--bg-dark) !important;
+  color: #fff;
+  border-color: var(--bg-dark) !important;
+  min-width: 100%;
+}
+
+.product-card-favourite {
+  opacity: 0;
+  transition: var(--transition-default);
+}
+
+.product-card:hover .product-card-favourite {
+  opacity: 100;
+}
+
+.product-card-name-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.product-card-name-link:hover .product-card-name {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+.product-card-favourite {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+}
+.product-card-compare {
+  position: absolute;
+  top: 50px;
+  right: 8px;
+  z-index: 10;
+  width: 34px;
+  height: 34px;
+  padding: 6px;
+  background: #fff;
+}
+.product-card-compare.compare-btn--active {
+  background: var(--accent);
+  color: #fff;
+}
+@media (hover: hover) and (min-width: 992px) {
+  .product-card-compare {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+  .product-card:hover .product-card-compare,
+  .product-card:focus-within .product-card-compare {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+@media (hover: none), (max-width: 991px) {
+  .product-card-favourite {
+    opacity: 1;
+  }
+  .product-buy {
+    display: block;
+  }
+}
+
+.product-card-name {
+  font-size: 16px;
+  line-height: 1.4;
+  height: calc(3 * 1.4em);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.product-card-price-container {
+  height: 27px;
+}
+
+.product-card-manufacturer {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.product-delivery {
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+
+  min-height: 34px;
+}
+
+.product-delivery--immediate {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.product-card-manufacturer-logo {
+  max-height: 20px;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.product-card-manufacturer-text {
+  height: 20px;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-code {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
